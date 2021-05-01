@@ -69,7 +69,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TARUC Events - Login or Register</title>
+	<title>Events - Login or Register</title>
 	<style>
 		.login_button{
 			font-family: Times New Roman;
