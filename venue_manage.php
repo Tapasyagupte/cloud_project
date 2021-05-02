@@ -18,7 +18,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TARUC Events - Venue Manage</title>
+	<title>Events - Venue Manage</title>
 	<style type="text/css">
 		a:hover{
 			font-size: 24px;
