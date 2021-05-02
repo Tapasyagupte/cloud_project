@@ -16,9 +16,7 @@
 		if (isset($_POST['adduser'])) {
 			header('Refresh: 0; user_mangeadd.php');
 		}
-		else if (isset($_POST['edituser'])) {
-			header('Refresh: 0; user_manage_edite.php');
-		}
+		
 		else if (isset($_POST['deleteuser'])) {
 			header('Refresh: 0; user_manage_delete.php');
 		}
@@ -29,9 +27,7 @@
 		else if (isset($_POST['addevent'])) {
 			header('Refresh: 0; event_manage_add.php');
 		}
-		else if (isset($_POST['editevent'])) {
-			header('Refresh: 0; event_manage_edite.php');
-		}
+		
 		else if (isset($_POST['deleteevent'])) {
 			header('Refresh: 0; event_manage_delete.php');
 		}
@@ -42,9 +38,7 @@
 		else if (isset($_POST['addvenue'])) {
 			header('Refresh: 0; venue_manage_add.php');
 		}
-		else if (isset($_POST['editvenue'])) {
-			header('Refresh: 0; venue_manage_edite.php');
-		}
+
 		else if (isset($_POST['deletevenue'])) {
 			header('Refresh: 0; venue_manage_delete.phpe');
 		}
