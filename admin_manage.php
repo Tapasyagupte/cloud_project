@@ -17,7 +17,7 @@
 			header('Refresh: 0; user_mangeadd.php');
 		}
 		else if (isset($_POST['edituser'])) {
-			header('Refresh: 0; user_manage_edit.php');
+			header('Refresh: 0; user_manage_edite.php');
 		}
 		else if (isset($_POST['deleteuser'])) {
 			header('Refresh: 0; user_manage_delete.php');
