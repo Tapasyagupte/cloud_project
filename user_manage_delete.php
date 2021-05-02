@@ -82,7 +82,7 @@
 			<table align="center" cellspacing="20px">
 				<tr><th style="text-decoration: underline;"> >>> Delete User <<< </th></tr>
 				<tr><td>User ID: 
-					<select name="delete_user_id" style="width: 140px;">
+					
 					<tr><td>User ID: <input type="text" name="a_userid" size="30" required></td></tr>
 				</td></tr>
 				<tr><td><input type="submit" name="deleteuser" value="Delete">&nbsp;&nbsp;&nbsp;&nbsp;
