@@ -116,22 +116,7 @@
 
 			$insert_user = "INSERT INTO event_details (EventName, EventDate, EventTime, EventCategory, EventDescription, EventTicketPrice, EventTicketTotal) VALUES ('$ename', '$edate', '$etime', '$ecategory', '$edescription', $eprice, $etotal)"
 			//Ensure no empty field
-			if($utype==''){
-				$message="User type not selected. Please try again.";
-				echo "<script type='text/javascript'>alert('$message');</script>";
-			}
-			else{
-				$result_insert_user = mysqli_query($conn, $insert_user);
-				if($result_insert_user){
-    				$message="Add user success.";
-					echo "<script type='text/javascript'>alert('$message');</script>";
-				}
-				else{
-					$message="Fail to add new user. Please try again.";
-					echo "<script type='text/javascript'>alert('$message');</script>";
-				}
-			}
-
+			
 		}
 
 		
