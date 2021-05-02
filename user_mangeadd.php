@@ -75,7 +75,7 @@
 		<hr width="auto" size="10" style="background: #808000">
 
 	<div id="add">
-		<form action="user_manage.phpadd" method="POST">
+		<form action="user_mangeadd.php" method="POST">
 			<table align="center" cellspacing="20px">
 				<tr><th style="text-decoration: underline;"> >>> Add New User <<< </th></tr>
 				<tr><td>User ID: <input type="text" name="a_userid" size="30" required></td></tr>
