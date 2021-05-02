@@ -85,11 +85,11 @@
 			<table align="center" cellspacing="20px">
 				<tr><th style="text-decoration: underline;"> >>> Add New Event <<< </th></tr>
 				<tr><td>Name: <input type="text" name="a_eventname" size="35" required></td></tr>
-				<tr><td>Date: <input type="text" name="edate" size="35" required></td></tr>
-				<tr><td>Time: <input type="text" name="etime" size="35" required></td></tr>
+				<tr><td>Date: <input type="text" name="edate" placeholder="eg: 2019-08-08" , size="35" required></td></tr>
+				<tr><td>Time: <input type="text" name="etime" placeholder="eg: 08:00:00" size="35" required></td></tr>
 				<tr><td>Event Category: <br><textarea name="a_eventcategory" rows="2" cols="50" placeholder="eg: Concert, Sports, Talk, Festival etc..." required></textarea></td></tr>
 				<tr><td>Event Description: <br><textarea name="a_eventdescription" rows="5" cols="50" required style="text-align: justify"></textarea></td></tr>
-				<tr><td>Venue: <input type="text" name="a_eventvenue" size="30" required></td></tr>
+				<tr><td>Venue id: <input type="text" name="a_eventvenue" size="30" required></td></tr>
 				</td></tr>
 				<tr><td>Ticket Price: RM <input type="number" name="a_eventticketprice" min="00" placeholder="0" required>.00 </td></tr>
 				<tr><td>Number of Ticket: <input type="number" name="a_eventtickettotal" min="10" placeholder="10" required></td></tr>
@@ -113,44 +113,22 @@
 			$eprice=$_POST['a_eventticketprice'];
 			$etotal=$_POST['a_eventtickettotal'];
 
-			//Add '0' to month
-			if(($emonth>0) && ($emonth<10)){
-				$emonth='0'.$emonth;
-			}
-			//Add '0' to day
-			if(($eday>0) && ($eday<10)){
-				$eday='0'.$eday;
-			}
-			//Add '0' to hour
-			if(($ehour>-1) && ($ehour<10)){
-				$ehour='0'.$ehour;
-			}
-			//Add '0' to minute
-			if(($eminute>-1) && ($eminute<10)){
-				$eminute='0'.$eminute;
-			}
+			
 
-			$edate=$eyear.'-'.$emonth.'-'.$eday;
-			$etime=$ehour.':'.$eminute.':00';
-
-			//Read venue id
-			$read_venue_id="SELECT VenueID FROM venue_details WHERE VenueName='$evenue'";
-			$result_read_venue_id = mysqli_query($conn, $read_venue_id);
-			if($result_read_venue_id){
-				while($row = mysqli_fetch_array($result_read_venue_id, MYSQLI_ASSOC)){
-					$vid=$row['VenueID'];
-					//Insert event
-					$insert_event = "INSERT INTO event_details (EventName, EventDate, EventTime, EventCategory, EventDescription, EventTicketPrice, EventTicketTotal) VALUES ('$ename', '$edate', '$etime', '$ecategory', '$edescription', $eprice, $etotal)";
-					$result_insert_event = mysqli_query($conn, $insert_event);
-					if($result_insert_event){
+	
+			
+	
+			$insert_event = "INSERT INTO event_details (EventName, EventDate, EventTime, EventCategory, EventDescription, EventTicketPrice, EventTicketTotal) VALUES ('$ename', '$edate', '$etime', '$ecategory', '$edescription', $eprice, $etotal)";
+			$result_insert_event = mysqli_query($conn, $insert_event);
+			if($result_insert_event){
     					$message="Add new event success.";
 						echo "<script type='text/javascript'>alert('$message');</script>";
 					}
-					else{
+			else{
 						$message="Fail to add new event. Please try again.";
 						echo "<script type='text/javascript'>alert('$message');</script>";
 					}
-				}
+				
 			}
 		}
 
