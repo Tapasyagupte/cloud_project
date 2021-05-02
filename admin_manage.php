@@ -30,7 +30,7 @@
 			header('Refresh: 0; event_manage_add.php');
 		}
 		else if (isset($_POST['editevent'])) {
-			header('Refresh: 0; event_manage_edit.php');
+			header('Refresh: 0; event_manage_edite.php');
 		}
 		else if (isset($_POST['deleteevent'])) {
 			header('Refresh: 0; event_manage_delete.php');
