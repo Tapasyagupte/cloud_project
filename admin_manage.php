@@ -14,7 +14,7 @@
 	//input
 		//Manage user
 		if (isset($_POST['adduser'])) {
-			header('Refresh: 0; user_manageadd.php');
+			header('Refresh: 0; user_mangeadd.php');
 		}
 		else if (isset($_POST['edituser'])) {
 			header('Refresh: 0; user_manage.php#edit');
@@ -56,7 +56,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Events- Admin Management</title>
+	<title>Events-Admin </title>
 	<style type="text/css">
 		a:hover{
 			font-size: 24px;
