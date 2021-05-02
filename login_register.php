@@ -14,14 +14,8 @@
 		$upicture = mysqli_real_escape_string($conn, $upicture);
 
 		$conn = mysqli_connect($servername, $username, $password, $dbname);
-		//$insert_user= " INSERT INTO user_details (UserID, UserFullName, UserPassword, UserType, UserEmail) VALUES ('$uid', '$uname', '$upass', '$utype', '$uemail');
+		$insert_user = "INSERT INTO user_details (UserID, UserFullName, UserPassword, UserType, UserEmail, UserImage) VALUES ('$uid', '$uname', '$upass', '$utype', '$uemail', '$upicture')";
 
-                $insert_user = "INSERT INTO user_details (UserID, UserFullName, UserPassword, UserType, UserEmail, UserImage) VALUES ('$uid', '$uname', '$upass', '$utype', '$uemail', '$upicture')";
-
-        
-
-
-	
 		//check password reconfirmation
 		if (($upass!=$upass1)){
 			$message="Password and re-enter password is incorrect. Please try again.";
