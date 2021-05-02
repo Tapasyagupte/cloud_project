@@ -85,11 +85,12 @@
 			<table align="center" cellspacing="20px">
 				<tr><th style="text-decoration: underline;"> >>> Add New Event <<< </th></tr>
 				<tr><td>Name: <input type="text" name="a_eventname" size="35" required></td></tr>
-				<tr><td>Date: <input type="text" name="edate" placeholder="eg: 2019-08-08" , size="35" required></td></tr>
-				<tr><td>Time: <input type="text" name="etime" placeholder="eg: 08:00:00" size="35" required></td></tr>
+				<tr><td>Date: <input type="text" name="edate" size="35" required></td></tr>
+				<tr><td>Time: <input type="text" name="etime" size="35" required></td></tr>
+
 				<tr><td>Event Category: <br><textarea name="a_eventcategory" rows="2" cols="50" placeholder="eg: Concert, Sports, Talk, Festival etc..." required></textarea></td></tr>
 				<tr><td>Event Description: <br><textarea name="a_eventdescription" rows="5" cols="50" required style="text-align: justify"></textarea></td></tr>
-				<tr><td>Venue id: <input type="text" name="a_eventvenue" size="30" required></td></tr>
+				<tr><td>Venue: <input type="text" name="a_eventvenue" size="30" required></td></tr>
 				</td></tr>
 				<tr><td>Ticket Price: RM <input type="number" name="a_eventticketprice" min="00" placeholder="0" required>.00 </td></tr>
 				<tr><td>Number of Ticket: <input type="number" name="a_eventtickettotal" min="10" placeholder="10" required></td></tr>
@@ -113,23 +114,24 @@
 			$eprice=$_POST['a_eventticketprice'];
 			$etotal=$_POST['a_eventtickettotal'];
 
-			
-
-	
-			
-	
-			$insert_event = "INSERT INTO event_details (EventName, EventDate, EventTime, EventCategory, EventDescription, EventTicketPrice, EventTicketTotal) VALUES ('$ename', '$edate', '$etime', '$ecategory', '$edescription', $eprice, $etotal)";
-			$result_insert_event = mysqli_query($conn, $insert_event);
-			if($result_insert_event){
-    					$message="Add new event success.";
-						echo "<script type='text/javascript'>alert('$message');</script>";
-					}
-			else{
-						$message="Fail to add new event. Please try again.";
-						echo "<script type='text/javascript'>alert('$message');</script>";
-					}
-				
+			$insert_user = "INSERT INTO event_details (EventName, EventDate, EventTime, EventCategory, EventDescription, EventTicketPrice, EventTicketTotal) VALUES ('$ename', '$edate', '$etime', '$ecategory', '$edescription', $eprice, $etotal)"
+			//Ensure no empty field
+			if($utype==''){
+				$message="User type not selected. Please try again.";
+				echo "<script type='text/javascript'>alert('$message');</script>";
 			}
+			else{
+				$result_insert_user = mysqli_query($conn, $insert_user);
+				if($result_insert_user){
+    				$message="Add user success.";
+					echo "<script type='text/javascript'>alert('$message');</script>";
+				}
+				else{
+					$message="Fail to add new user. Please try again.";
+					echo "<script type='text/javascript'>alert('$message');</script>";
+				}
+			}
+
 		}
 
 		
