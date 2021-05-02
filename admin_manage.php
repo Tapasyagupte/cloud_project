@@ -17,36 +17,36 @@
 			header('Refresh: 0; user_mangeadd.php');
 		}
 		else if (isset($_POST['edituser'])) {
-			header('Refresh: 0; user_manage.php#edit');
+			header('Refresh: 0; user_manage_edit.php');
 		}
 		else if (isset($_POST['deleteuser'])) {
-			header('Refresh: 0; user_manage.php#delete');
+			header('Refresh: 0; user_manage_delete.php');
 		}
 		else if (isset($_POST['viewuser'])) {
 			header('Refresh: 0; user_manage_view.php');
 		}
 		//Manage Event
 		else if (isset($_POST['addevent'])) {
-			header('Refresh: 0; event_manage.php#add');
+			header('Refresh: 0; event_manage_add.php');
 		}
 		else if (isset($_POST['editevent'])) {
 			header('Refresh: 0; event_manage_edit.php');
 		}
 		else if (isset($_POST['deleteevent'])) {
-			header('Refresh: 0; event_manage.php#delete');
+			header('Refresh: 0; event_manage_delete.php');
 		}
 		else if (isset($_POST['viewevent'])) {
 			header('Refresh: 0; event_manage_view.php');
 		}
 		//Manage Venue
 		else if (isset($_POST['addvenue'])) {
-			header('Refresh: 0; venue_manage.php#add');
+			header('Refresh: 0; venue_manage_add.php');
 		}
 		else if (isset($_POST['editvenue'])) {
-			header('Refresh: 0; venue_manage.php#edit');
+			header('Refresh: 0; venue_manage_edite.php');
 		}
 		else if (isset($_POST['deletevenue'])) {
-			header('Refresh: 0; venue_manage.php#delete');
+			header('Refresh: 0; venue_manage_delete.phpe');
 		}
 		else if (isset($_POST['viewvenue'])) {
 			header('Refresh: 0; venue_manage_view.php');
