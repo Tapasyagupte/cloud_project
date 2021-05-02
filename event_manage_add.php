@@ -85,22 +85,11 @@
 			<table align="center" cellspacing="20px">
 				<tr><th style="text-decoration: underline;"> >>> Add New Event <<< </th></tr>
 				<tr><td>Name: <input type="text" name="a_eventname" size="35" required></td></tr>
-				<tr>
-					<td>Date: 
-						<input type="number" name="a_eventyear" min="2019" max="2050" placeholder="YYYY" required> -
-						<input type="number" name="a_eventmonth" min="01" max="12" placeholder="MM" required> -
-						<input type="number" name="a_eventday" min="01" max="31" placeholder="DD" required>
-					</td>
-				</tr>
-				<tr>
-					<td>Time (24-hour format): 
-						<input type="number" name="a_eventhour" min="00" max="24" placeholder="HH" required> : 
-						<input type="number" name="a_eventminute" min="00" max="60" placeholder="MM" required>
-					</td>
-				</tr>
+				<tr><td>Date: <input type="text" name="edate" size="35" required></td></tr>
+				<tr><td>Time: <input type="text" name="etime" size="35" required></td></tr>
+
 				<tr><td>Event Category: <br><textarea name="a_eventcategory" rows="2" cols="50" placeholder="eg: Concert, Sports, Talk, Festival etc..." required></textarea></td></tr>
 				<tr><td>Event Description: <br><textarea name="a_eventdescription" rows="5" cols="50" required style="text-align: justify"></textarea></td></tr>
-				<tr><td>Venue: 
 				<tr><td>Venue: <input type="text" name="a_eventvenue" size="30" required></td></tr>
 				</td></tr>
 				<tr><td>Ticket Price: RM <input type="number" name="a_eventticketprice" min="00" placeholder="0" required>.00 </td></tr>
@@ -117,11 +106,8 @@
 		
 		if (isset($_POST['addevent'])) {
 			$ename=$_POST['a_eventname'];
-			$eyear=$_POST['a_eventyear'];
-			$emonth=$_POST['a_eventmonth'];
-			$eday=$_POST['a_eventday'];
-			$ehour=$_POST['a_eventhour'];
-			$eminute=$_POST['a_eventminute'];
+			$edate=$_POST['edate'];
+			$etime=$_POST['etime'];
 			$edescription=$_POST['a_eventdescription'];
 			$ecategory=$_POST['a_eventcategory'];
 			$evenue=$_POST['a_eventvenue'];
