@@ -18,7 +18,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Events - Add/Edit/Delete User </title>
+	<title>Events - Add/Delete User </title>
 	<style type="text/css">
 		a:hover{
 			font-size: 24px;
@@ -83,21 +83,11 @@
 				<tr><th style="text-decoration: underline;"> >>> Delete User <<< </th></tr>
 				<tr><td>User ID: 
 					<select name="delete_user_id" style="width: 140px;">
-						<option value="">Select</option>
-						<?php
-							$conn = mysqli_connect($servername, $username, $password, $dbname);
-							$read_user = "SELECT * FROM user_details";
-							$result_read_user = mysqli_query($conn, $read_user);
-							if(mysqli_num_rows($result_read_user)>0){
-								while($row = mysqli_fetch_array($result_read_user, MYSQLI_ASSOC)){
-									echo "<option value='".$row[UserID]."'>".$row[UserID]."</option>";
-								}
-							}
-						?>
-					</select>
-				&nbsp;&nbsp;<input type="submit" name="refreshuser" value="Refresh"></td></tr>
+					<tr><td>User ID: <input type="text" name="a_userid" size="30" required></td></tr>
+				</td></tr>
 				<tr><td><input type="submit" name="deleteuser" value="Delete">&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type="reset" name="cancel" value="Cancel"></td></tr>
+	
 		</form>
 	</div>
 
