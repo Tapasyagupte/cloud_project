@@ -40,7 +40,7 @@
 		}
 
 		else if (isset($_POST['deletevenue'])) {
-			header('Refresh: 0; venue_manage_delete.phpe');
+			header('Refresh: 0; venue_manage_delete.php');
 		}
 		else if (isset($_POST['viewvenue'])) {
 			header('Refresh: 0; venue_manage_view.php');
