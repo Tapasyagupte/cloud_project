@@ -18,7 +18,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>TARUC Events - Add/Edit/Delete User </title>
+	<title>Events - Add/Edit/Delete User </title>
 	<style type="text/css">
 		a:hover{
 			font-size: 24px;
@@ -75,7 +75,7 @@
 		<hr width="auto" size="10" style="background: #808000">
 
 	<div id="add">
-		<form action="user_manage.php#add" method="POST">
+		<form action="login_register.php" method="POST">
 			<table align="center" cellspacing="20px">
 				<tr><th style="text-decoration: underline;"> >>> Add New User <<< </th></tr>
 				<tr><td>User ID: <input type="text" name="a_userid" size="30" required></td></tr>
