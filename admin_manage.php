@@ -123,46 +123,6 @@
 	        	$(".dropdown-content").show();
 	        });
 	    });
-	    $(document).ready(function(){
-	        $("#ename").click(function(){
-	        	window.location="event_manage_edit.php#editname";
-	        });
-	    });
-	    $(document).ready(function(){
-	        $("#edate").click(function(){
-	        	window.location="event_manage_edit.php#editdate";
-	        });
-	    });
-	    $(document).ready(function(){
-	        $("#etime").click(function(){
-	        	window.location="event_manage_edit.php#edittime";
-	        });
-	    });
-	    $(document).ready(function(){
-	        $("#ecategory").click(function(){
-	        	window.location="event_manage_edit.php#editcategory";
-	        });
-	    });
-	    $(document).ready(function(){
-	        $("#edescription").click(function(){
-	        	window.location="event_manage_edit.php#editdescription";
-	        });
-	    });
-	    $(document).ready(function(){
-	        $("#evenue").click(function(){
-	        	window.location="event_manage_edit.php#editvenue";
-	        });
-	    });
-	    $(document).ready(function(){
-	        $("#eprice").click(function(){
-	        	window.location="event_manage_edit.php#editticketprice";
-	        });
-	    });
-	    $(document).ready(function(){
-	        $("#etotal").click(function(){
-	        	window.location="event_manage_edit.php#edittickettotal";
-	        });
-	    });
 	</script>
 </head>
 <body background="image\bg.png">
@@ -177,7 +137,6 @@
 			<tr>
 				<td width="300px">User:</td>
 				<td><input type="submit" name="adduser" value="Add"></td>
-				//<td><input type="submit" name="edituser" value="Edit"></td>
 				<td><input type="submit" name="deleteuser" value="Delete"></td>
 				<td><input type="submit" name="viewuser" value="View"></td>
 			</tr>
@@ -186,21 +145,6 @@
 			<tr>
 				<td width="300px">Event:</td>
 				<td><input type="submit" name="addevent" value="Add"></td>
-				<td>
-					<div class="dropdown">
-						//<input type="submit" name="editevent" value="Edit">
-						//<div class="dropdown-content">
-							<input type="button" class="dropdown-button" id="ename" value="Name">
-							<input type="button" class="dropdown-button" id="edate" value="Date">
-							<input type="button" class="dropdown-button" id="etime" value="Time">
-							<input type="button" class="dropdown-button" id="ecategory" value="Category">
-							<input type="button" class="dropdown-button" id="edescription" value="Description">
-							<input type="button" class="dropdown-button" id="evenue" value="Venue">							
-							<input type="button" class="dropdown-button" id="eprice" value="Ticket Price">
-							<input type="button" class="dropdown-button" id="etotal" value="Number of Ticket">
-						</div>
-					</div>
-				</td>
 				<td><input type="submit" name="deleteevent" value="Delete"></td>
 				<td><input type="submit" name="viewevent" value="View"></td>
 			</tr>
@@ -209,7 +153,6 @@
 			<tr>
 				<td width="300px">Venue:</td>
 				<td><input type="submit" name="addvenue" value="Add"></td>
-				//<td><input type="submit" name="editvenue" value="Edit"></td>
 				<td><input type="submit" name="deletevenue" value="Delete"></td>
 				<td><input type="submit" name="viewvenue" value="View"></td>
 			</tr>
