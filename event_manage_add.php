@@ -87,7 +87,6 @@
 				<tr><td>Name: <input type="text" name="a_eventname" size="35" required></td></tr>
 				<tr><td>Date: <input type="text" name="edate" size="35" required></td></tr>
 				<tr><td>Time: <input type="text" name="etime" size="35" required></td></tr>
-
 				<tr><td>Event Category: <br><textarea name="a_eventcategory" rows="2" cols="50" placeholder="eg: Concert, Sports, Talk, Festival etc..." required></textarea></td></tr>
 				<tr><td>Event Description: <br><textarea name="a_eventdescription" rows="5" cols="50" required style="text-align: justify"></textarea></td></tr>
 				<tr><td>Venue: <input type="text" name="a_eventvenue" size="30" required></td></tr>
@@ -141,7 +140,7 @@
 				while($row = mysqli_fetch_array($result_read_venue_id, MYSQLI_ASSOC)){
 					$vid=$row['VenueID'];
 					//Insert event
-					$insert_event = "INSERT INTO event_details (EventName, EventDate, EventTime, EventCategory, EventDescription, EventTicketPrice, EventTicketTotal, VenueID, UserID) VALUES ('$ename', '$edate', '$etime', '$ecategory', '$edescription', $eprice, $etotal, '$vid', '$uid')";
+					$insert_event = "INSERT INTO event_details (EventName, EventDate, EventTime, EventCategory, EventDescription, EventTicketPrice, EventTicketTotal) VALUES ('$ename', '$edate', '$etime', '$ecategory', '$edescription', $eprice, $etotal)";
 					$result_insert_event = mysqli_query($conn, $insert_event);
 					if($result_insert_event){
     					$message="Add new event success.";
