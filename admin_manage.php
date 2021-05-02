@@ -177,7 +177,7 @@
 			<tr>
 				<td width="300px">User:</td>
 				<td><input type="submit" name="adduser" value="Add"></td>
-				<td><input type="submit" name="edituser" value="Edit"></td>
+				//<td><input type="submit" name="edituser" value="Edit"></td>
 				<td><input type="submit" name="deleteuser" value="Delete"></td>
 				<td><input type="submit" name="viewuser" value="View"></td>
 			</tr>
@@ -188,8 +188,8 @@
 				<td><input type="submit" name="addevent" value="Add"></td>
 				<td>
 					<div class="dropdown">
-						<input type="submit" name="editevent" value="Edit">
-						<div class="dropdown-content">
+						//<input type="submit" name="editevent" value="Edit">
+						//<div class="dropdown-content">
 							<input type="button" class="dropdown-button" id="ename" value="Name">
 							<input type="button" class="dropdown-button" id="edate" value="Date">
 							<input type="button" class="dropdown-button" id="etime" value="Time">
@@ -209,7 +209,7 @@
 			<tr>
 				<td width="300px">Venue:</td>
 				<td><input type="submit" name="addvenue" value="Add"></td>
-				<td><input type="submit" name="editvenue" value="Edit"></td>
+				//<td><input type="submit" name="editvenue" value="Edit"></td>
 				<td><input type="submit" name="deletevenue" value="Delete"></td>
 				<td><input type="submit" name="viewvenue" value="View"></td>
 			</tr>
