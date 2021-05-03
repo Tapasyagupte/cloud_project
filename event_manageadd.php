@@ -81,10 +81,10 @@
 				<tr><td>Event Name: <input type="text" name="event_name" size="30" required></td></tr>
 				<tr><td>Event Date: <input type="text" name="event_date" size="30" required></td></tr>
 				<tr><td>Event Time: <input type="text" name="event_time" size="30" required></td></tr>
-				<tr><td>Event Category: <input type="email" name="event_category" size="30" required></td></tr>
+				<tr><td>Event Category: <input type="text" name="event_category" size="30" required></td></tr>
 				<tr><td>Event Description: <input type="text" name="event_description" size="30" required></td></tr>
-				<tr><td>Event Ticket Price: <input type="email" name="event_ticket_price" size="30" required></td></tr>
-				<tr><td>Event Ticket Total: <input type="email" name="event_ticket_total" size="30" required></td></tr>
+				<tr><td>Event Ticket Price: <input type="text" name="event_ticket_price" size="30" required></td></tr>
+				<tr><td>Event Ticket Total: <input type="text" name="event_ticket_total" size="30" required></td></tr>
 
 				<tr><td><input type="submit" name="adduser" value="Add">&nbsp;&nbsp;&nbsp;&nbsp;
 						<input type="reset" name="cancel" value="Cancel"></td></tr>
