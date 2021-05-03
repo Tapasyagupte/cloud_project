@@ -25,7 +25,7 @@
 		}
 		//Manage Event
 		else if (isset($_POST['addevent'])) {
-			header('Refresh: 0; event_manage_add.php');
+			header('Refresh: 0; event_manageadd.php');
 		}
 		
 		else if (isset($_POST['deleteevent'])) {
